@@ -1,0 +1,18 @@
+<div class="container-home">
+    <form [formGroup]="form">
+        <div class="content">
+            <p class="description">Entrada</p>
+            <mat-form-field class="input" appearance="outline">
+                <mat-label>Entrada</mat-label>
+                <input matInput formControlName="numbers" placeholder="Ex. 1, 2, 3, 4"/>
+                <mat-error *ngIf="numbers.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+            <div class="actions">
+                <button type="button" mat-button (click)="rotate()">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="rotate_90_degrees_cw">rotate_90_degrees_cw</mat-icon>
+                    Rotacionar
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

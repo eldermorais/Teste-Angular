@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="actions">
+        <button type="button" mat-button (click)="back()">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="rotate_90_degrees_cw">
+                arrow_circle_left
+            </mat-icon>
+            Voltar
+        </button>
+    </div>
+    <p>Saída</p>
+    <div class="table" [ngStyle]="getStyles()">
+        <div *ngFor="let item of listRotate" class="square">
+            {{item}}
+        </div>
+    </div>
+</div>

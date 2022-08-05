@@ -1,0 +1,32 @@
+.container-home {
+    margin: 20px 15px;
+
+    .description {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        color: #616161;
+    }
+
+    .content {
+        width: 400px;
+        mat-form-field {
+            width: 100%;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                display: flex;
+                align-items: center;
+                width: 150px;
+                background: #12cc85;
+                color: #fff;
+                margin-left: auto;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(#04aa6b, #12cc85);
+    p {
+        margin: 0 15px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+
+    }
+}
